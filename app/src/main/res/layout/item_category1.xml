@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T-shirt"
+        android:textSize="15sp"
+        style="@style/customfontstyle"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"/>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="@color/blue"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorGrey"/>
+</LinearLayout>

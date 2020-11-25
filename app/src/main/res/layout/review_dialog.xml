@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/customfontstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/write_a_review"
+                android:textAllCaps="true"
+
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBar_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:numStars="5"
+            android:saveEnabled="true"
+            android:theme="@style/RatingBar" />
+
+
+        <TextView
+            style="@style/customfontstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/title"
+            android:textAllCaps="true"
+
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gryline">
+
+            <EditText
+                android:id="@+id/edt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/title"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colordark"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/customfontstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="true"
+
+            android:text="@string/reviews"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gryline">
+
+            <EditText
+                android:id="@+id/edt_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/reviews"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colordark"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <TextView
+            style="@style/customfontstyle"
+            android:gravity="center"
+            android:id="@+id/tv_cancle"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/cancle"
+            android:textColor="@color/colorBlack"
+            android:textAllCaps="true"
+
+            android:textSize="16sp" />
+
+
+        <TextView
+            style="@style/customfontstyle"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:id="@+id/tv_add"
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="40dp"
+            android:textAllCaps="true"
+
+            android:paddingRight="40dp"
+            android:text="@string/add"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

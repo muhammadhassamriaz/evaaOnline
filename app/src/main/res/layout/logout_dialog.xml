@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="3dp">
+
+        <TextView
+            style="@style/customfontstyle"
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/customfontstyle"
+            android:id="@+id/tvDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:letterSpacing="0.08"
+            android:text="Are you sure you want to logout?"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.07dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/sky"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customfontstyle"
+            android:id="@+id/tvDialogok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Yes"
+            android:textAllCaps="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/sky" />
+
+        <View
+            android:layout_width="0.07dp"
+            android:layout_height="match_parent"
+            android:background="@color/sky"/>
+
+        <TextView
+            style="@style/customfontstyle"
+            android:id="@+id/tvDialogCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+
+            android:layout_marginBottom="10dp"
+            android:text="No"
+            android:textColor="@color/sky" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:cardElevation="3dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_border">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:padding="2dp"
+                        android:text="address"
+                        android:id="@+id/tv_address"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:focusable="false"
+                        android:textSize="14sp"
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:ellipsize="end"
+                        style="@style/customfontstyle1"
+                        android:textColor="@color/gray" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="17dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_edit" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:id="@+id/switch_primary"
+                    android:theme="@style/switch_theme"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/primary"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="45dp"
+                    style="@style/customfontstyle1"
+                    android:textColor="@color/sky"/>
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btn_gotomap"
+                    android:text="GO TO MAP"
+                    style="@style/customfontstyle1"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/sky"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

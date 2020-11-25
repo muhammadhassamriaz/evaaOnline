@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvsize"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/simple_round"
+        android:gravity="center"
+        android:text="S" />
+
+
+    <LinearLayout
+        android:id="@+id/lnr_color"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvcolor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_round"
+            android:gravity="center"
+            android:text=""
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">Evaa Online</string>
+    <!--Send OTP Key-->
+    <string name="sendotp_key">304579AWY4UCQsErJ5dd38f1e</string>
+
+    <array name="array_dot_active">
+        <item>@color/sky</item>
+        <item>@color/sky</item>
+        <item>@color/sky</item>
+        <item>@color/sky</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+    </array>
+
+   <!-- <string name="rupee">\u20B9</string>-->
+    <string name="rupee">QAR </string>
+    <string name="notification_channel_id">1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- home Screen -->
+    <string name="menu">MENU</string>
+    <string name="shop_by_category">Shop By Category</string>
+    <string name="shop_by_choice">Shop By Choice</string>
+    <string name="shop_by_product">Shop By Product</string>
+    <string name="recently_viewed">Recently Viewed</string>
+    <string name="on_facebook">On FaceBook</string>
+    <string name="lifestylestores">/lifestylestores</string>
+    <string name="on_twitter">On Twitter</string>
+    <string name="lifestyle_store">Lifestyle_Store</string>
+    <string name="follow">Follow</string>
+    <string name="home_connect_with_neomi_fashion">CONNECT WITH EVAA FASHION</string>
+    <string name="home_lbl_subscribe">SUBSCRIBE</string>
+    <string name="home__hint_sign_up_for_email_updates">Sign up for email updates</string>
+    <string name="home_join">JOIN!</string>
+    <string name="home_neomi_fashion_rights_reserved">2019 Evaa Fashion. All Rights Reserved</string>
+
+    <!--  register screen strings  -->
+    <string name="reg_hint_email_address">عنوان الايميل*</string>
+    <string name="reg_hint_password">كلمه السر</string>
+    <string name="reg_btn_show">تبين</string>
+    <string name="reg_hint_mobile_number">رقم المحمول(للحصول على تحديثات النظام)</string>
+    <string name="reg_hint_full_name">الاسم الكامل</string>
+    <string name="reg_male">الذكر</string>
+    <string name="reg_female">أنثى</string>
+    <string name="reg_cb_referral_code">I have a referral code</string>
+    <string name="reg_btn_create_account">إصنع حساب</string>
+    <string name="send_otp">أرسل OTP</string>
+    <string name="didn_t_receive_the_otp_1_minutes_resend_otp">ألم تصلك دقيقة واحدة لمرة واحدة؟</string>
+    <string name="mobile_no">عنوان الايميل</string>
+    <string name="enter_otp">أدخل OTP</string>
+    <string name="country_code">الرقم الدولي</string>
+
+    <!--  register page validation msg  -->
+    <string name="reg_enter_email">الرجاء إدخال معرف البريد الإلكتروني</string>
+    <string name="reg_enter_name">الرجاء إدخال الاسم الكامل</string>
+    <string name="reg_enter_valid_email">الرجاء إدخال البريد الإلكتروني الصحيح</string>
+    <string name="reg_enter_password">Please enter password</string>
+    <string name="reg_password_length_msg">يجب أن تكون كلمة المرور أكبر من أو تساوي ستة أحرف</string>
+    <string name="reg_enter_mobile_number">الرجاء إدخال رقم الجوال</string>
+    <string name="reg_enter_full_name">الرجاء إدخال الاسم الكامل</string>
+    <string name="reg_select_gender">يرجى تحديد الجنس</string>
+    <string name="reg_enter_mobileno">الرجاء إدخال رقم الجوال</string>
+    <string name="reg_enter_valid_mobileno">الرجاء إدخال رقم هاتف مكون من ٨ أرقام</string>
+    <string name="reg_enter_valid_otp">فشل في التحقق من OTP. حاول مرة اخرى</string>
+    <string name="please_enter_your_mobile_number">الرجاء إدخال رقم الجوال</string>
+    <string name="please_enter_country_code">الرجاء إدخال رمز الدولة</string>
+
+    <!--  login(activity_main) screen strings  -->
+    <string name="login_hint_mobile_or_email">رقم المحمول</string>
+    <string name="login_hint_password">كلمه السر</string>
+    <string name="login_btn_log_in">تسجيل الدخول</string>
+    <string name="login_btn_sign_up">سجل باستخدام OTP</string>
+    <string name="login_btn_forgot_password">هل نسيت كلمة المرور</string>
+
+
+    <!--  my profile screen string  -->
+    <string name="my_profile_title">ملفي</string>
+    <string name="my_profile_txt_home">الصفحة الرئيسية</string>
+    <string name="my_profile_txt_login">تسجيل الدخول</string>
+    <string name="my_profile_txt_my_order">أوامر معلقة</string>
+    <string name="my_profile_txt_my_order_history">تاريخ الطلب</string>
+    <string name="my_profile_txt_shipping_address">عنوان الشحن</string>
+    <string name="my_profile_txt_settings">إعدادات</string>
+    <string name="my_profile_txt_my_account">حسابي</string>
+    <string name="my_profile_txt_wishlist">قائمة الرغبات</string>
+    <string name="my_profile_txt_log_out">تسجيل خروج</string>
+
+
+    <!--  product detail(pd) screen strings  -->
+    <string name="pd_txt_select_size">Select Size</string>
+    <string name="pd_product_details">Product Details</string>
+    <string name="pd_view_similar">VIEW SIMILAR</string>
+    <string name="pd_review">إعادة النظر</string>
+    <string name="pd_review_msg_first_to_review">Be the first to review.</string>
+    <string name="pd_review_msg_about_this_product">What do you think about this product?</string>
+    <string name="write_a_review">Write a review</string>
+
+    <!-- Address screen -->
+    <string name="use_my_current_location">Use my current location</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="house_no_building_name">House No., Building Name</string>
+    <string name="street_name">اسم المنطقة</string>
+    <string name="landmark_optional">معلم معروف(Optional)</string>
+    <string name="country">بلد</string>
+    <string name="state">حالة</string>
+    <string name="city">مدينة</string>
+    <string name="status">الحالة</string>
+    <string name="primary">Primary</string>
+    <string name="choose_different_address">Choose Different Address</string>
+    <string name="save">Save</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="please_enter_zipcode">Please Enter Zipcode</string>
+    <string name="please_enter_houseno">Please Enter House no.</string>
+    <string name="please_enter_streetname">الرجاء إدخال اسم الشارع</string>
+    <string name="please_enter_countryname">Please Enter Country Name</string>
+    <string name="please_enter_statename">Please Enter State Name</string>
+    <string name="please_enter_cityname">Please Enter City Name</string>
+
+
+    <!-- Profile Screen-->
+
+    <string name="select_an_action">Select an action</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="edit">تعديل</string>
+    <string name="name">اسم</string>
+    <string name="enter_name">أدخل الاسم</string>
+    <string name="email">عنوان الايميل</string>
+    <string name="enter_email">أدخل البريد الإلكتروني</string>
+
+    <!-- Change Password-->
+    <string name="change_password">غير كلمة السر</string>
+    <string name="retry_with_call">Retry with Call</string>
+    <string name="new_password">كلمة سر جديدة</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="please_enter_old_pass">الرجاء إدخال كلمة المرور القديمة</string>
+    <string name="please_enter_new_pass">الرجاء إعادة إدخال كلمة المرور الجديدة</string>
+    <string name="please_enter_confirm_pass">الرجاء إعادة إدخال كلمة المرور الجديدة</string>
+    <string name="password_not_match">كلمة المرور وتأكيد كلمة المرور يجب أن تكون هي نفسها</string>
+
+    <!-- ForgetPassword-->
+    <string name="forgetpassword">هل نسيت كلمة المرور</string>
+    <string name="enter_password">أدخل كلمة المرور</string>
+
+
+    <!-- Review-->
+    <string name="title">عنوان</string>
+    <string name="reviews">إعادة النظر</string>
+    <string name="please_enter_title">Please Enter Title</string>
+    <string name="please_enter_review">Please Enter Review</string>
+
+    <!-- Order Details-->
+    <string name="your_order_has_been_placed_successfully">Your Order Has Been Placed Successfully</string>
+    <string name="waiting_for_confirmation_from_merchant_side">Waiting for confirmation from merchant side</string>
+    <string name="go_to_homepage">go to homepage</string>
+    <string name="merchant_name">عنوان الايميل : </string>
+    <string name="total_pay">Total Pay</string>
+    <string name="cancle_order">Cancel Order</string>
+    <string name="mobile_no_1">رقم المحمول : </string>
+    <string name="email_id">عنوان الايميل : </string>
+    <string name="address">عنوان : </string>
+    <string name="customer_name">اسم الزبون :</string>
+    <string name="order">Order : </string>
+    <string name="total_amount">المبلغ الإجمالي : </string>
+    <string name="total_item">Total Item : </string>
+    <string name="list_of_items">List Of Items</string>
+    <string name="products">Products</string>
+    <string name="qty">Qty</string>
+    <string name="price">السعر</string>
+    <string name="my_orders">My Orders</string>
+    <string name="pending_order">Pending Order</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="order_status">Order Status</string>
+    <string name="order_waiting">Order Waiting</string>
+    <string name="details">Details</string>
+    <string name="order_amount">Order Amount</string>
+    <string name="are_you_sure_you_want_to_cancel_this_order">هل أنت متأكد أنك تريد إلغاء هذا الطلب؟</string>
+
+
+    <!-- cart Details-->
+    <string name="sub_total">Sub Total</string>
+    <string name="delivery_charges">رسوم التوصيل</string>
+    <string name="coupon_discount">مبلغ القسيمة</string>
+    <string name="total"> المنتج</string>
+    <string name="choose_supplier">Choose Supplier</string>
+    <string name="add_to_wishlist">Add To WishList</string>
+    <string name="added_to_wishlist">Added on Wishlist</string>
+    <string name="add_to_bag">Add To Bag</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="added_to_cart">Added on Cart</string>
+    <string name="added">ADDED</string>
+    <string name="cart">Cart</string>
+    <string name="update_cart">Update Cart</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="your_cart_is_empty">Your Cart is Empty</string>
+    <string name="pelase_select_supplier">Please Select Supplier</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="bag">Bag</string>
+    <string name="address1">عنوان</string>
+    <string name="payment">Payment</string>
+    <string name="options">OPTIONS</string>
+    <string name="price_details">PRICE DETAILS</string>
+    <string name="variant">الاختلاف :</string>
+    <string name="review_validation">Item Already added in Wishlist</string>
+    <string name="cart_validation">Item Already added in Cart</string>
+    <string name="select_address_validation">Please add shipping address</string>
+
+
+    <!--Filter-->
+    <string name="sort">Sort</string>
+    <string name="filters">Filters</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+
+
+    <!-- General validation-->
+    <string name="internet_connection">No Internet Connection Available</string>
+    <string name="logout_msg">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="App_exit">Are you sure you want to Exit form app?</string>
+    <string name="delete_msg">Are you sure you want to Delete this ?</string>
+
+
+    <!-- General-->
+    <string name="sort_by">Sort By</string>
+    <string name="price_highest_first">السعر من الارخص للاعلى</string>
+    <string name="price_lowest_first">السعر الاعلى الى الادنى</string>
+    <string name="name_atoz">الاسم (من الألف إلى الياء)</string>
+    <string name="name_ztoa">الاسم (من ي إلى أ)</string>
+    <string name="discount">خصم</string>
+    <string name="cancle">إلغاء</string>
+    <string name="add">أضف</string>
+    <string name="select_language">اختار اللغة</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="show_notification">إظهار الإخطار</string>
+    <string name="account">الحساب</string>
+    <string name="wishlist">قائمة الرغبات</string>
+    <string name="collection">مجموعة</string>
+    <string name="next">التالى</string>
+    <string name="yes">نعم</string>
+    <string name="no">رقم</string>
+    <string name="skip_now">تخطي الآن</string>
+    <string name="update">تحديث</string>
+    <string name="no_data_found">لا يوجد منتج متاح</string>
+    <string name="no_coupon_found">لا قسيمة متاحة</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="todo">TODO</string>
+    <string name="please_wait">ارجوك انتظر</string>
+    <string name="loading">جار التحميل…</string>
+    <string name="product_available">المنتجات المتاحة</string>
+    <string name="see_all">اظهار الكل</string>
+    <string name="featured_products">المنتج المميز</string>
+    <string name="product_description">وصف المنتج</string>
+    <string name="stock">مخزون :</string>
+    <string name="sku">كود تعريف البضاعة :</string>
+    <string name="category">الفئة :</string>
+    <string name="continues">استمر</string>
+    <string name="latest_product">أحدث المنتجات</string>
+    <string name="custom_size">حجم مخصص</string>
+    <string name="item_length">ITEM LENGTH</string>
+    <string name="inch">بوصة</string>
+    <string name="chest">صدر</string>
+    <string name="sleeves_from_neck">الأكمام من الرقبة</string>
+    <string name="neck_sleeve_width">مقاس الخصر</string>
+    <string name="abaya_height">طول العباءة</string>
+    <string name="sleeve_width">عرض كم</string>
+    <string name="waist_size">مقاس الخصر</string>
+
+</resources>

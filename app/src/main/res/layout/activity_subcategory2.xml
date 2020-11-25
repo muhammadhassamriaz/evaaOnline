@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Activity.SubCategoryActivity2">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <include layout="@layout/toolbar_main" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lnr_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvCategoryName"
+                                style="@style/customfontstyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:textAllCaps="true"
+
+                                android:text=""
+                                android:textColor="@color/blue"
+                                android:textSize="16sp"
+                                tools:text="name" />
+
+                            <TextView
+                                android:id="@+id/tvItems"
+                                style="@style/customfontstyle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha=".7"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                tools:text="3 items" />
+
+                            <FrameLayout
+                                android:id="@+id/frm_woman"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginBottom="5dp">
+
+                                <ImageView
+                                    android:id="@+id/img_main"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/demo"/>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:background="@color/transpernt"/>
+
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textAllCaps="true"
+
+                                    android:text="demo"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/White"/>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_sucategory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:nestedScrollingEnabled="false"
+                                    tools:itemCount="2"
+                                    tools:listitem="@layout/item_product" />
+
+                                <TextView
+                                    android:id="@+id/tv_nodata"
+                                    style="@style/customfontstyle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="@string/no_data_found"
+                                    android:textColor="@color/blue"
+                                    android:textSize="15sp"
+                                    android:visibility="gone" />
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/bottomlayout" />
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

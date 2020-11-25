@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".5"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/demo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/customfontstyle"
+                android:id="@+id/tvProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Product Name"
+                android:textColor="@color/gray"
+                android:textAllCaps="true"
+
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/customfontstyle1"
+                android:textSize="14sp"
+                android:id="@+id/tvMerchantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:text="Sold By: Elixirnet" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/customfontstyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+
+                    android:text="@string/variant"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tvattribute"
+                    style="@style/customfontstyle1"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:textAllCaps="true"
+
+                    android:layout_marginLeft="3dp"
+                    android:text="Color:" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textAllCaps="true"
+
+                    style="@style/customfontstyle1"
+                    android:text="Qty : " />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <Spinner
+                        android:id="@+id/sp_qty"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:rotation="270"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:tint="@color/gray"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_back"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDiscountPrice"
+                    style="@style/customfontstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9599"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    style="@style/customfontstyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:text="899" />
+
+                <TextView
+                    android:id="@+id/tvDiscountPercent"
+                    style="@style/customfontstyle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="(50% off)"
+                    android:textColor="@color/colorGolden"
+                    android:textAllCaps="true"
+
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivremove"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_close" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGrey"/>
+
+</LinearLayout>

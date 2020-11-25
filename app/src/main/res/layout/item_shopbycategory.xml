@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llContainer"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/lightGolden"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCategoryName"
+        style="@style/customfontstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightsky"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Kurtas"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack" />
+
+    <ImageView
+        android:id="@+id/ivShopCategory"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/demo" />
+
+    <TextView
+        android:id="@+id/tvsCategoryName"
+        style="@style/customfontstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Shop WoMen"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+</LinearLayout>
